@@ -1,9 +1,27 @@
-.Toast_Container{
+.Success_Toast_Container{
+    border: 1px solid #00AC80 ;
+
     /* display: none; */
     /* background-color: red; */
+}
+
+
+.SuccessText{
+   color: #00AC80 
+}
+.SuccessBtn{
+    background: #00AC80 ;
 }
 
 .profile{
     border-radius: 50px !important;
     /* border: 1px solid red; */
+}
+
+.Danger_Toast_Container{
+    border: 1px solid #FF6464;
+}
+
+.DangerText{
+    color:#FF6464;
 }

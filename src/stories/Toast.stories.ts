@@ -48,8 +48,7 @@ export const Danger: Story = {
 export const DangerWithBUTTON: Story = {
   args: {
     message: "We are reaching out to you about your car's extended warranty.",
-
-    type:'Danger',
+    type:'DangerWithCTA',
     buttonLabel:"Go back"
 
   },

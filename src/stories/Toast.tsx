@@ -41,61 +41,60 @@ function Toast(props: Props) {
     switch (props.type){
         case "Success":
             return (
-                <Card className={Styles.Toast_Container}>
-                <p>
+                <Card data-testid = "success-toast" className={Styles.Success_Toast_Container} >
+                <p data-testid = "success-message" className={Styles.SuccessText}>
         
-                The Said Message: {props.message}
+               {props.message}
                 </p>
-                <p>i am in {props.type} state</p>
         
                 
                 </Card>
             )
         case "SuccessWithCTA":
             return (
-                <Card className={Styles.Toast_Container}>
-                <p>
+                <Card className={Styles.Success_Toast_Container} data-testid = "success-toast">
+                <p className={Styles.SuccessText} data-testid='success-message'>  
         
-                The Said Message: {props.message}
+               {props.message}
                 </p>
-                <p>i am in {props.type} state</p>
-        
-              <Button variant='contained'>{props.buttonLabel}</Button>
+
+              <Button  style={{backgroundColor:"#00AC80"}}  data-testid="toast-cta" variant='contained'>{props.buttonLabel}</Button>
                 </Card>
             )
         case "Danger":
             return (
-                <Card className={Styles.Toast_Container}>
-                <p>
+                <Card data-testid = "Danger-toast" className={Styles.Danger_Toast_Container} >
+                <p data-testid = "Danger-message" className={Styles.DangerText}>
         
-                The Said Message: {props.message}
+               {props.message}
                 </p>
-                <p>i am in {props.type} state</p>
+ 
         
+                
                 </Card>
             )
         case "DangerWithCTA":
             return (
-                <Card className={Styles.Toast_Container}>
-                <p>
+                <Card className={Styles.Danger_Toast_Container} data-testid = "Danger-toast">
+                <p data-testid = "Danger-message" className={Styles.DangerText}>
         
-                The Said Message: {props.message}
+            {props.message}
                 </p>
-                <p>i am in {props.type} state</p>
-                <Button variant='contained'>{props.buttonLabel}</Button>
+
+                <Button style={{backgroundColor:"#FF6464"}} data-testid = "toast-cta" variant='contained'>{props.buttonLabel}</Button>
                 </Card>
             )
         case "Avatar":
             return (
-                <Card className={Styles.Toast_Container}>
+                <Card className={Styles.Avatar_Toast_Container} data-testid = "Avatar-toast">
                  
-                 {props.url?  <Image src={props.url} alt="profile pic" className={Styles.profile}/>: <Image className={Styles.profile} src={avatar} width={32} height={32} alt=""/> }   
-                <p>
+                 {props.url?  <Image src={props.url} width={32} height={32} alt="profile-pic" className={Styles.profile}/>: <Image className={Styles.profile} src={avatar} width={32} height={32} alt="profile-pic"/> }   
+                <p data-testid = "avatar-message">
         
-                The Said Message: {props.message}
+          {props.message}
                 </p>
-                <p>i am in {props.type} state</p>
-                <Button variant='contained'>{props.buttonLabel}</Button>
+
+                <Button style={{backgroundColor:"#FFFF00"}} data-testid = "toast-cta" variant='contained'>{props.buttonLabel}</Button>
                 </Card>
             )
 
