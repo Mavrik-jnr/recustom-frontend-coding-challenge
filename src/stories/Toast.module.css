@@ -1,16 +1,30 @@
-.Success_Toast_Container{
-    border: 1px solid #00AC80 ;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-    /* display: none; */
-    /* background-color: red; */
+*{
+    font-family: "Inter" ;
+    font-size: 14px;
+}
+
+.Success_Toast_Container{
+    border: 1px solid #66E7C6 ;
+    border-radius: 6px; 
+    max-width: 640px;
+    width: 100%;
+
 }
 
 
 .SuccessText{
-   color: #00AC80 
+    font-size: 14px;
+   color: #00AC80 ;
+   margin: 0px;
+   padding: 16px;
+   line-height: 200%;
+   /* padding: 0px; */
 }
 .SuccessBtn{
     background: #00AC80 ;
+
 }
 
 .profile{
@@ -24,4 +38,23 @@
 
 .DangerText{
     color:#FF6464;
+    margin: 0px;
+    padding: 16px;
+    line-height: 200%;
+}
+
+.Avatar_Toast_Container{
+    box-shadow: 0px 1px 0 2px #00000014 !important;
+
+}
+.Avatar_message{
+    color:#6B7280;
+    margin: 0px;
+    padding: 16px;
+    line-height: 200%;
+}
+.Avatar_Toast_Container h4{
+    color:#111928;
+    margin: 0px;
+    padding-inline: 16px;
 }

@@ -31,9 +31,9 @@ export const Success: Story = {
 };
 export const SuccessWithButton: Story = {
   args: {
-    message:"The action that you have done was a success! Well done",
+    message:"Well done, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. Be sure to use margin utilities to keep things nice and tidy.",
     type:"SuccessWithCTA",
-    buttonLabel:"Go to Dashboard"
+    buttonLabel:"Take action"
   },
 };
 
@@ -47,7 +47,7 @@ export const Danger: Story = {
 };
 export const DangerWithBUTTON: Story = {
   args: {
-    message: "We are reaching out to you about your car's extended warranty.",
+    message: "Oh snap, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. Be sure to use margin utilities to keep things nice and tidy.",
     type:'DangerWithCTA',
     buttonLabel:"Go back"
 
@@ -57,7 +57,7 @@ export const DangerWithBUTTON: Story = {
 // Avatar
 export const Avatar: Story = {
   args: {
-    message:"Hey sweetie, how's your day going, just wanted to reach out to you about your car's extended waranty and the policies that come along with that",
+    message:"Hi Neil, thanks for sharing your thoughts regardingFlowbite.",
     buttonLabel:"Go Home",
     type:"Avatar"
   },

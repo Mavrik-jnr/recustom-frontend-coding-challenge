@@ -19,7 +19,7 @@ describe("Toast", ()=>{
 
     render(<Toast type='Success' message='Your Action was successful'/>)
     expect(screen.getByTestId("success-message")).toHaveStyle("color: rgb(0, 172, 128)")
-            expect(screen.getByTestId("success-toast")).toHaveStyle("border: 1px solid #00AC80")
+            expect(screen.getByTestId("success-toast")).toHaveStyle("border: 1px solid #66E7C6")
         })
         it("does not have a Call to Action", ()=>{
             
@@ -40,7 +40,7 @@ describe("Toast", ()=>{
 
             render(<Toast type='SuccessWithCTA' message='Your Action was successful' buttonLabel='Proceed'/>)
                 expect(screen.getByTestId("success-message")).toHaveStyle("color: rgb(0, 172, 128)")
-                    expect(screen.getByTestId("success-toast")).toHaveStyle("border: 1px solid #00AC80")
+                    expect(screen.getByTestId("success-toast")).toHaveStyle("border: 1px solid #66E7C6")
                     expect(screen.getByTestId("toast-cta")).toHaveStyle("background-color: #00AC80")
                 })
         it("has a Call to Action with label", ()=>{
